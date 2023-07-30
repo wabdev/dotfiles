@@ -1,0 +1,63 @@
+@define-color bg-grey #2F2F33;
+@define-color highlight #3D3D42;
+@define-color text-white #F4F8F9;
+@define-color pink #CF62FF;
+
+* {
+    transition: none;
+    box-shadow: none;
+}
+
+#waybar {
+    color: @text-white;
+    background: @bg-grey;
+}
+
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    margin: 4px 0;
+    padding: 0 6px;
+    color: #F4F8F9;
+}
+
+#workspaces button.visible {}
+
+#workspaces button.focused { 
+    border-radius: 4px;
+    background-color: @highlight;
+}
+
+#workspaces button.urgent {
+    background-color: @pink;
+}
+
+#tray {
+    margin: 4px 8px 4px 4px;
+    border-radius: 4px;
+    background-color: @higlight;
+}
+
+#tray * {
+    padding: 0 6px;
+    /*border-left: 1px solid @highlight;*/
+}
+
+#tray *:first-child {
+    border-left: none;
+}
+
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail, #clock, #temperature {
+  margin: 4px 2px;
+  padding: 0 6px;
+  border-radius: 4px;
+  min-width: 20px;
+}
+
+#clock {
+  margin-left: 12px;
+  margin-right: 4px;
+  background-color: transparent;
+}
