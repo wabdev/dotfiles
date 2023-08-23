@@ -2,7 +2,6 @@ dotfiles_dir = ".dotfiles"
 
 [settings]
 posthooks = [
-    "nvim --headless +PlugInstall +PlugClean! +quitall",
     "sway reload",
     "fc-cache"
 ]
