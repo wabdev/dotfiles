@@ -119,6 +119,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 Plug 'pearofducks/ansible-vim'
 Plug 'github/copilot.vim'
+Plug 'sindrets/diffview.nvim'
 call plug#end()
 
 syntax on
@@ -126,3 +127,6 @@ colorscheme dracula
 let g:lightline = {
             \'colorscheme': 'darcula',
             \ }
+
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
