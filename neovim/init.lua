@@ -203,7 +203,7 @@ require("lazy").setup({
       lspconfig.basedpyright.setup({
         settings = {
           python = {
-                pythonPath = get_python_path(configs.root_dir)
+            pythonPath = get_python_path(configs.root_dir)
           }
         } 
       })

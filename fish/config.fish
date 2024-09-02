@@ -9,3 +9,7 @@ fzf --fish | source
 
 export TERMINAL="wezterm"
 export PYENV_ROOT="$HOME/.pyenv"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
